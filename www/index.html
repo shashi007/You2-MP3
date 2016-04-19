@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+<!--
+	<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<style>iframe{ width:1px;height:1px; }</style>
+
+
+	
+	<script src="lib/ionic/js/ionic.bundle.js"></script>
+
+	<script src="cordova.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/services.js"></script>
+-->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script>$(function(){
+		$('iframe.site').load(function(){
+			$('.yukleniyor').fadeOut(200);
+		});
+	});</script>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+<iframe src="http://benservet.com/yt" class="site" style="overflow:hidden;height:100%;width:100%;position:absolute;z-index:2" frameborder="0" width="100%" height="100%"></iframe>
+<div class="yukleniyor" style="position:absolute;width:100%;height:100%; background:red;text-align:center;padding-top:10%z-index:1">
+	<img src="icon.png" alt="">
+</div>
+<!--
+	<ion-header-bar class="bar-assertive">
+		<h1 class="title">you2.mp3</h1>
+	</ion-header-bar>
+	
+		<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+		<ion-tab title="Arama Yap" icon-off="ion-search" icon-on="ion-search" href="#/tab/dash">
+		<ion-nav-view name="tab-dash">
+			<ion-content>
+				<div class="col col-100">
+					<div class="list">
+					  <div class="item item-input-inset">
+					    <label class="item-input-wrapper">
+					      <input type="text" id="query" placeholder="Şarkı ara..">
+					    </label>
+					    <button class="arabtn button button-small">
+					      YouTube'da Ara
+					    </button>
+					  </div>
+					</div>
+					<div class="benimkiler">
+
+					</div>
+				</div>
+			</ion-content>
+		</ion-nav-view>
+		</ion-tab>
+
+
+		<ion-tab title="URL'den indir" icon-off="ion-link" icon-on="ion-link" href="#/tab/chats">
+		<ion-nav-view name="tab-chats">
+			<ion-content>
+			<div class="col col-100">
+					<div class="list">
+					  <div class="item item-input-inset">
+					    <label class="item-input-wrapper">
+					      <input type="text" id="uquery" class="col col-100" placeholder="YouTube linki yapıştırın..">
+					    </label>
+					    <button class="urlbtn button button-small">
+					      Hemen İndir
+					    </button>
+					  </div>
+					</div>
+			</div>
+			</ion-content>
+		</ion-nav-view>
+		</ion-tab>
+
+		</ion-tabs>
+
+<iframe src="" frameborder="0" class="indirbakalim"></iframe>
+
+
+<script src="js/my.js" type="text/javascript"></script>
+<script src="https://apis.google.com/js/client.js?onload=init" type="text/javascript"></script>
+-->
+
+</body>
+</html>

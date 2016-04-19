@@ -1,0 +1,32 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.benservet.you2mp3" version="1.0.0">
+  <name>You2Mp3</name>
+  <description>Basit ve hızlı, Youtube Mp3 dönüştürücü.</description>
+  <author href="http://benservet.com" email="servettuncel@gmail.com">Servet Tunçel</author>
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  <plugin name="cordova-plugin-network-information" source="npm"/>
+  <plugin name="cordova-plugin-statusbar" source="npm"/>
+  <plugin name="cordova-plugin-whitelist" source="npm"/>
+  <icon src="icon.png"/>
+  <platform name="android">
+    <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+  </platform>
+  
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+</widget>
